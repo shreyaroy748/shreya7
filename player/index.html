@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Music Player</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="java.js">
+
+    </script>
+
+    <!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <!-- Introduction Bootstrap -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!-- font awesome icon -->
+<script src="https://kit.fontawesome.com/e8e6eba5d5.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+
+<h4 class="text-center"><i class="fa fa-music"></i> Music Player<i class="fa fa-music"></i></h4>
+
+<main>
+        <div class="a song">a</div>
+        <div class="b song">b</div>
+        <div class="c song">c</div>
+
+        <div class="d song">d</div>
+        <div class="e song">e</div>
+        <div class="f song">f</div>
+
+        <div class="g song">g</div>
+        <div class="h song">h</div>
+        <div class="i song">i</div>
+</main>
+  </body>
+  <script>
+
+
+  var divlenght = document.querySelectorAll('.song').length;
+
+  console.log(divlenght);
+  for (var i = 0; i <divlenght; i++) {
+    var demo =document.querySelectorAll('.song')[i].
+    addEventListener('click',playsong);
+
+    var demo =document.querySelectorAll('.song')[i].
+    addEventListener('dblclick',pausesong);
+  }
+  var song1 = new Audio();
+  song1.src ="song/Bewajah.mp3";
+
+  var song2 = new Audio();
+  song2.src ="song/Do-Dil-Mil-Rahe-Hain.mp3";
+
+  var song3 = new Audio();
+  song3.src ="song/Humnava-Mere.mp3";
+
+  var song4 = new Audio();
+  song4.src ="song/Ishq-Di-Feeling.mp3";
+
+  var song5 = new Audio();
+  song5.src ="song/Nain-Tere.mp3";
+
+  var song6 = new Audio();
+  song6.src ="song/Tera-Chehra.mp3";
+
+  var song7 = new Audio();
+  song7.src ="song/Tera-Hua.mp3";
+
+  var song8 = new Audio();
+  song8.src ="song/Thaam-Lo.mp3";
+
+  var song9 = new Audio();
+  song9.src ="song/Zaroorat.mp3";
+
+
+
+  function playsong(){
+    var songId = this.innerHTML;
+    console.log(songId);
+
+    switch (songId) {
+      case "a":
+        song1.play();
+        break;
+
+        case "b":
+          song2.play();
+          break;
+
+          case "c":
+            song3.play();
+            break;
+
+            case "d":
+              song4.play();
+              break;
+
+              case "e":
+                song5.play();
+                break;
+
+                case "f":
+                  song6.play();
+                  break;
+
+                  case "g":
+                    song7.play();
+                    break;
+
+                    case "h":
+                      song8.play();
+                      break;
+
+                      case "i":
+                        song9.play();
+                        break;
+
+      default:
+      console.log("wrong input");
+  break;
+    }
+}
+function pausesong(){
+  var songId = this.innerHTML;
+  console.log(songId);
+
+  switch (songId) {
+    case "a":
+      song1.pause();
+      break;
+
+      case "b":
+        song2.pause();
+        break;
+
+        case "c":
+          song3.pause();
+          break;
+
+          case "d":
+            song4.pause();
+            break;
+
+            case "e":
+              song5.pause();
+              break;
+
+              case "f":
+                song6.pause();
+                break;
+
+                case "g":
+                  song7.pause();
+                  break;
+
+                  case "h":
+                    song8.pause();
+                    break;
+                    case "i":
+                      song9.pause();
+                      song10.pause();
+                      break;
+
+    default:
+    console.log("wrong input");
+break;
+  }
+
+}
+
+
+
+  </script>
+</html>

@@ -1,0 +1,75 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+h4{
+  color: #444;
+
+}
+.text-center{
+    padding: 30px 0!important;
+}
+main{
+  width: 90%;
+  height: 550px;
+  margin: auto;
+  border: 1px solid black;
+  display: flex!important;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap !important;
+}
+div{
+  width: 30%;
+  height: 160px;
+  box-shadow: 2px 2px 5px grey;
+  border-radius: 10px;
+  cursor:pointer;
+}
+.a{
+  background-image: url('../img/music1.jpeg');
+   background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.b{
+  background-image: url('../img/music2.jpg');
+   background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.c{
+  background-image: url('../img/music3.webp');
+   background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.d{
+  background-image: url('../img/Music4.jpg');
+   background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.e{
+  background-image: url('../img/music5.png');
+   background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.f{
+  background-image: url('../img/music6.jpg');
+   background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.g{
+  background-image: url('../img/music7.jpg');
+   background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.h{
+  background-image: url('../img/music8.jpg');
+   background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.i{
+  background-image: url('../img/music9.webp');
+   background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
